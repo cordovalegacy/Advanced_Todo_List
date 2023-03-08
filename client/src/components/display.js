@@ -6,8 +6,8 @@ const Display = (props) => {
     const { taskList, setTaskList } = props
     console.log(taskList)
 
-    const deleteTasks = (taskFromMap) => {
-        setTaskList(taskList.filter(relatedTask => relatedTask !== taskFromMap))
+    const deleteTasks = (tasksFromMap) => {
+        setTaskList(taskList.filter(relatedTask => relatedTask !== tasksFromMap))
     }
 
     const completeTasks = (singleTask) => {
